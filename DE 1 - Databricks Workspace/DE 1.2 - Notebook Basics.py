@@ -198,7 +198,7 @@ print("Hello Python!")
 # COMMAND ----------
 
 # MAGIC %sql
-# MAGIC -- SELECT * FROM demo_tmp_vw
+# MAGIC  SELECT * FROM demo_tmp_vw
 
 # COMMAND ----------
 
@@ -206,6 +206,19 @@ print("Hello Python!")
 # MAGIC
 # MAGIC
 # MAGIC But we can declare it and a handful of other variables and functions by running this cell:
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SHOW CATALOGS;
+
+# COMMAND ----------
+
+# MAGIC %run ./Includes/Classroom-Setup-01.2
+
+# COMMAND ----------
+
+dbutils.library.restartPython()
 
 # COMMAND ----------
 

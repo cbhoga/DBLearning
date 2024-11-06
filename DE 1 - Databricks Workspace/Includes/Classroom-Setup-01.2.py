@@ -31,3 +31,25 @@ DA.init()
 _create_demo_tmp_vw()
 
 DA.conclude_setup()
+
+# COMMAND ----------
+
+print(f"DA:                   {DA}")
+print(f"DA.username:          {DA.username}")
+print(f"DA.paths.working_dir: {DA.paths.working_dir}")
+print(f"DA.schema_name:       {DA.schema_name}")
+
+# COMMAND ----------
+
+path = f"{DA.paths.datasets}"
+dbutils.fs.ls(path)
+
+# COMMAND ----------
+
+path = f"{DA.paths.datasets}"
+files = dbutils.fs.ls(path)
+display(files)
+
+# COMMAND ----------
+
+DA.cleanup()
