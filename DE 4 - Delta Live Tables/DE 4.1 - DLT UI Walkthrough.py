@@ -116,6 +116,7 @@ DA.create_pipeline(pipeline_language)
 # COMMAND ----------
 
 DA.validate_pipeline_config(pipeline_language)
+#all are passed
 
 # COMMAND ----------
 
