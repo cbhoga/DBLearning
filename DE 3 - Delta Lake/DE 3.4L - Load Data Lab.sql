@@ -69,6 +69,7 @@
 -- COMMAND ----------
 
 -- <FILL_IN>
+--select * from xyz
 
 -- COMMAND ----------
 
